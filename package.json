@@ -22,7 +22,8 @@
     "migrate:dev": "npx prisma migrate dev --name init && npx prisma generate",
     "migrate:deploy": "npx prisma migrate deploy && npx prisma generate",
     "test": "jest --forceExit",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "postl": "bash start.sh"
   },
   "devDependencies": {
     "chokidar": "^4.0.1",
@@ -58,6 +59,7 @@
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.7",
     "ejs": "^3.1.10",
+    "fs-extra": "^11.2.0",
     "express": "^4.21.1",
     "express-session": "^1.18.1"
   }
